@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.0.31" id="DataBindings"
+             SeparateXMLFiles="false" Package="com.redsam.exportxls.view" ClientType="Generic">
+  <pageMap>
+    <page path="/exportTester.jsf" usageId="com_redsam_exportxls_view_exportTesterPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_redsam_exportxls_view_exportTesterPageDef"
+          path="com.redsam.exportxls.view.pageDefs.exportTesterPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="RsExportAppModuleDataControl" Package="com.redsam.exportxls.model.service"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="RsExportAppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

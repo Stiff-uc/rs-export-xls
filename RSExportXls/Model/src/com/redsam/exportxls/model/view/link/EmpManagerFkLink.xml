@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EmpManagerFkLink"
+  Version="12.2.1.0.31"
+  InheritPersonalization="merge"
+  EntityAssociation="com.redsam.exportxls.model.entity.assoc.EmpManagerFkAssoc">
+  <ViewLinkDefEnd
+    Name="ManagerIdEmployeesView"
+    Cardinality="1"
+    Source="true"
+    Owner="com.redsam.exportxls.model.view.EmployeesView">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="ManagerIdEmployeesView"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.redsam.exportxls.model.view.EmployeesView.EmployeeId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="EmployeesView"
+    Cardinality="-1"
+    Owner="com.redsam.exportxls.model.view.EmployeesView">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="EmployeesView"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.redsam.exportxls.model.view.EmployeesView.ManagerId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>
