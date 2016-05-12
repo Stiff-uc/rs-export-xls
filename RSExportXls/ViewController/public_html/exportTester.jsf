@@ -28,7 +28,7 @@
                                     </af:button>
                                     <af:button text="Export selected rows" id="b2">
                                         <af:exportCollectionActionListener type="RSExcelExport" exportedId="t2"
-                                                                           filename="ExportAllRows.xls"
+                                                                           filename="ExportSelectedRows.xls"
                                                                            title="Title of export selected rows"
                                                                            exportedRows="selected"/>
                                     </af:button>
